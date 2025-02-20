@@ -13,10 +13,6 @@ phases:
     commands:
       - echo "Setting up Laravel environment..."
       - composer install --no-dev --prefer-dist --optimize-autoloader
-      - php artisan config:clear
-      - php artisan cache:clear
-      - php artisan config:cache
-      - php artisan migrate --force
 
   build:
     commands:
