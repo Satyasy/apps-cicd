@@ -6,7 +6,7 @@ phases:
       php: 8.3
     commands:
       - echo "Installing system dependencies..."
-      - apt update && apt install -y unzip curl git nginx mysql-client php8.3 php8.3-cli php8.3-fpm php8.3-redis php8.3-gd php8.3-readline php8.3-mysql php8.3-xml php8.3-mbstring php8.3-curl php8.3-intl php8.3-zip
+      - apt update && apt install -y unzip curl git nginx
       - curl -sS https://getcomposer.org/installer | php
       - mv composer.phar /usr/local/bin/composer
   pre_build:
